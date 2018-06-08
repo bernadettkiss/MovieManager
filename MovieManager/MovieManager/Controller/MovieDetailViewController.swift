@@ -21,11 +21,12 @@ class MovieDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController!.navigationBar.isTranslucent = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+        
         activityIndicator.alpha = 1.0
         activityIndicator.startAnimating()
         

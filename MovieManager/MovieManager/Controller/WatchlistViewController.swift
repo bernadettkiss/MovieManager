@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WatchlistViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class WatchlistViewController: MovieManagerViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var watchlistTableView: UITableView!
     

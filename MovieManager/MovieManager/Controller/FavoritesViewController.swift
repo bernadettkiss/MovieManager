@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoritesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class FavoritesViewController: MovieManagerViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var favoritesTableView: UITableView!
     

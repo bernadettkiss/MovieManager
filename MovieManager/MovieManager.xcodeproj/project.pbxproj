@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF51D66D20C9BB8F00DFCFAE /* MovieManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF51D66C20C9BB8F00DFCFAE /* MovieManagerViewController.swift */; };
 		CF6EDC1A20C58E6000E5C938 /* WatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6EDC1920C58E6000E5C938 /* WatchlistViewController.swift */; };
 		CF6EDC1C20C5920E00E5C938 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6EDC1B20C5920E00E5C938 /* MovieDetailViewController.swift */; };
+		CF85582B20C990720073B39B /* MoviePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85582A20C990720073B39B /* MoviePickerViewController.swift */; };
 		CF9C424B20BF0A4E00EF3F00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C424A20BF0A4E00EF3F00 /* AppDelegate.swift */; };
 		CF9C424D20BF0A4E00EF3F00 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C424C20BF0A4E00EF3F00 /* LoginViewController.swift */; };
 		CF9C425020BF0A4E00EF3F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9C424E20BF0A4E00EF3F00 /* Main.storyboard */; };
@@ -25,8 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF51D66C20C9BB8F00DFCFAE /* MovieManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManagerViewController.swift; sourceTree = "<group>"; };
 		CF6EDC1920C58E6000E5C938 /* WatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistViewController.swift; sourceTree = "<group>"; };
 		CF6EDC1B20C5920E00E5C938 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		CF85582A20C990720073B39B /* MoviePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePickerViewController.swift; sourceTree = "<group>"; };
 		CF9C424720BF0A4E00EF3F00 /* MovieManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9C424A20BF0A4E00EF3F00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9C424C20BF0A4E00EF3F00 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			children = (
 				CF9C424C20BF0A4E00EF3F00 /* LoginViewController.swift */,
 				CFB78C1220BF4326002329C4 /* TMDBAuthViewController.swift */,
+				CF51D66C20C9BB8F00DFCFAE /* MovieManagerViewController.swift */,
+				CF85582A20C990720073B39B /* MoviePickerViewController.swift */,
 				CFB78C1620C099CA002329C4 /* FavoritesViewController.swift */,
 				CF6EDC1920C58E6000E5C938 /* WatchlistViewController.swift */,
 				CF6EDC1B20C5920E00E5C938 /* MovieDetailViewController.swift */,
@@ -199,6 +205,7 @@
 			files = (
 				CFB78C1120BF352D002329C4 /* TMDBConstants.swift in Sources */,
 				CFB78C1720C099CA002329C4 /* FavoritesViewController.swift in Sources */,
+				CF51D66D20C9BB8F00DFCFAE /* MovieManagerViewController.swift in Sources */,
 				CFB78C1320BF4326002329C4 /* TMDBAuthViewController.swift in Sources */,
 				CFB78C1920C09A0F002329C4 /* TMDBMovie.swift in Sources */,
 				CF6EDC1C20C5920E00E5C938 /* MovieDetailViewController.swift in Sources */,
@@ -207,6 +214,7 @@
 				CF6EDC1A20C58E6000E5C938 /* WatchlistViewController.swift in Sources */,
 				CF9C424B20BF0A4E00EF3F00 /* AppDelegate.swift in Sources */,
 				CFB78C1520C06A4B002329C4 /* TMDBApiKey.swift in Sources */,
+				CF85582B20C990720073B39B /* MoviePickerViewController.swift in Sources */,
 				CF9C425F20BF13D900EF3F00 /* BorderedButton.swift in Sources */,
 				CF9C425D20BF0CDF00EF3F00 /* GradientView.swift in Sources */,
 			);

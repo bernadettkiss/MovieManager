@@ -26,6 +26,7 @@ extension TMDBClient {
         static let AccountIDWatchlist = "/account/{id}/watchlist"
         static let AuthenticationTokenNew = "/authentication/token/new"
         static let AuthenticationSessionNew = "/authentication/session/new"
+        static let SearchMovie = "/search/movie"
     }
     
     struct URLKeys {
@@ -36,6 +37,7 @@ extension TMDBClient {
         static let ApiKey = "api_key"
         static let RequestToken = "request_token"
         static let SessionID = "session_id"
+        static let Query = "query"
     }
     
     struct ParameterValues{

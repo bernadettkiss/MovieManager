@@ -118,6 +118,24 @@ class TMDBClient {
         }
     }
     
+    func getMovies(forSearchString searchString: String, completionHandlerForMovies: @escaping (_ result: [TMDBMovie]?, _ error: NSError?) -> Void) -> URLSessionDataTask? {
+        let parameters = [TMDBClient.ParameterKeys.Query: searchString]
+        let task = taskForGET(method: Methods.SearchMovie, parameters: parameters as [String: AnyObject]) { (results, error) in
+            if let error = error {
+                completionHandlerForMovies(nil, error)
+            } else {
+                if let results = results?[TMDBClient.JSONResponseKeys.MovieResults] as? [[String: AnyObject]] {
+                    let movies = TMDBMovie.moviesFromResults(results)
+                    completionHandlerForMovies(movies, nil)
+                    print(results)
+                } else {
+                    completionHandlerForMovies(nil, NSError(domain: "getMoviesForSearchString parsing", code: 0, userInfo: [NSLocalizedDescriptionKey: "Could not parse getMoviesForSearchString"]))
+                }
+            }
+        }
+        return task
+    }
+    
     func getFavoriteMovies(_ completionHandlerForFavorites: @escaping (_ result: [TMDBMovie]?, _ error: NSError?) -> Void) {
         let parameters = [TMDBClient.ParameterKeys.SessionID: TMDBClient.instance.sessionID!]
         var mutableMethod = Methods.AccountIDFavoriteMovies
